@@ -5,7 +5,13 @@ const currentTime = date.getHour();
 
 let greetingTime;
 
-if (currentTime < 12) 
+if (currentTime < 12) {
+  greetingTime = "Good Morning";
+} else if (currentTime < 18) {
+  greetingTime ="Good Afternoon"
+} else {
+  greetingTime = "Good Night"
+}
 
 
 export default function Home() {
