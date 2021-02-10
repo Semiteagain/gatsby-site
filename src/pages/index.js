@@ -1,6 +1,6 @@
-import React from "react";
+import * as React from "react";
 
-const date = new.Date();
+const date = Date();
 const currentTime = date.getHour();
 
 let greetingTime;
@@ -13,10 +13,14 @@ if (currentTime < 12) {
   greetingTime = "Good Night"
 }
 
-
-export default function Home() {
-  return <div>
+const Home = () => {
+  return (
+<div>
     <h1>Hello</h1>
     <p>{greetingTime}</p>
   </div>
+  )
 }
+
+
+export default Home;
